@@ -2,7 +2,7 @@
 <manifest>
 
   <!-- Manifest -->
-  <project path="manifest" name="HinohArata/manifest_something" remote="github" />
+  <project path="manifest" name="HinohArata/manifest_something" revision="uvite-1.5" remote="github" />
 
   <remove-project name="platform/packages/apps/Settings" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="something" />
@@ -26,7 +26,7 @@
   <project path="vendor/aospa/prebuilt" name="android_vendor_aospa_prebuilt" remote="blobs-something" />
   <project path="vendor/lawnchair" name="android_vendor_lawnchair" remote="something" />
   <project path="vendor/SomethingOTA" name="android_vendor_SomethingOTA" remote="something" />
-  <project path="vendor/something/certification" name="android_vendor_something_certification" remote="something" />
+  <project path="vendor/something/certification" name="SomethingOS/android_vendor_something_certification" revision="uvite" remote="gitlab" />
 
   <project path="build/make" name="android_build" remote="something" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -39,13 +39,13 @@
 
   <!-- Bootable -->
   <remove-project name="platform/bootable/recovery" />
-  <project path="bootable/recovery" name="SomethingOS/android_bootable_recovery" remote="something" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="something" />
 
   <!-- System -->
   <remove-project name="platform/system/core" />
-  <project path="system/core" name="android_system_core" remote="something" />
+  <project path="system/core" name="system_core" remote="something" />
   <remove-project name="platform/system/sepolicy" />
-  <project path="system/sepolicy" name="android_system_sepolicy" remote="something" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="something" />
 
   <!-- External -->
   <remove-project name="platform/external/gptfdisk" />
