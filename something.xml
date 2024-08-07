@@ -2,7 +2,7 @@
 <manifest>
 
   <!-- Manifest -->
-  <project path="manifest" name="manifest" remote="something" />
+  <project path="manifest" name="HinohArata/manifest_something" remote="github" />
 
   <remove-project name="platform/packages/apps/Settings" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="something" />
